@@ -316,7 +316,6 @@ FILE * openFileSafely(char * filename, char * permissions) {
 
     returns pointer to opened file
   */
-  printf("opening %s as a file\n", filename);
   FILE * lab1Data = fopen(filename, permissions);
   if (lab1Data == NULL)
     //printf("warning: %s\n", errno == 2 ? "file doesn't exist" : "had problems loading file");
